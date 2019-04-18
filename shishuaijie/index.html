@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+          .box{
+              overflow: hidden;
+          }
+        .box > div {
+
+            width: 150px;
+            height: 150px;
+            float: left;
+            border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        div > img {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="accirion">
+    <div><img src="images/1.jpg" alt=""></div>
+    <div><img src="images/2.jpg" alt=""></div>
+    <div><img src="images/3.jpg" alt=""></div>
+    <div><img src="images/4.jpg" alt=""></div>
+    <div><img src="images/5.jpg" alt=""></div>
+    <div><img src="images/6.jpg" alt=""></div>
+    <div><img src="images/7.jpg" alt=""></div>
+    <div><img src="images/8.jpg" alt=""></div>
+    <div><img src="images/9.jpg" alt=""></div>
+    <div><img src="images/10.jpg" alt=""></div>
+    <div><img src="images/11.jpg" alt=""></div>
+    <div><img src="images/12.jpg" alt=""></div>
+    <div><img src="images/13.jpg" alt=""></div>
+    <div><img src="images/14.jpg" alt=""></div>
+    <div><img src="images/15.jpg" alt=""></div>
+    <div><img src="images/16.jpg" alt=""></div>
+    <div><img src="images/17.jpg" alt=""></div>
+    <div><img src="images/18.jpg" alt=""></div>
+    <div><img src="images/19.jpg" alt=""></div>
+    <div><img src="images/20.jpg" alt=""></div>
+</div>
+</body>
+<script src="script.js"></script>
+<script>
+    var user_option = {
+        row:4,
+        col:5,
+        time:500
+    }
+    accirion('accirion',user_option)
+</script>
+</html>
